@@ -18,11 +18,13 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 set(HEADERS
     include/View/mainwindow.h
+    include/Model/model.h
 )
 
 set(SOURCES
     source/main.cc
     source/View/mainwindow.cc
+    source/Model/model.cpp
 )
 
 find_package(Qt5 COMPONENTS Widgets REQUIRED)
