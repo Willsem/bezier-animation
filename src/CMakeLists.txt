@@ -18,11 +18,24 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 set(HEADERS
     include/View/mainwindow.h
+    include/View/OpenGLWidget.h
+    include/Model/Facade.h
+    include/Model/Drawer/Drawer.h
+    include/Model/Drawer/OpenGLDrawer.h
+    include/Model/Managers/Manager.h
+    include/Model/Managers/DrawManager.h
+    include/Commands/Command.h
+    include/Commands/Draw.h
 )
 
 set(SOURCES
     source/main.cc
     source/View/mainwindow.cc
+    source/View/OpenGLWidget.cc
+    source/Model/Facade.cc
+    source/Model/Drawer/OpenGLDrawer.cc
+    source/Model/Managers/DrawManager.cc
+    source/Commands/Draw.cc
 )
 
 find_package(Qt5 COMPONENTS Widgets REQUIRED)
