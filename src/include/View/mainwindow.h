@@ -2,6 +2,7 @@
 #define __MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QVector2D>
 
 namespace Ui
 {
