@@ -8,6 +8,7 @@ class MoveManager : public Manager
 {
 public:
     MoveManager();
+
 };
 
 #endif // MOVEMANAGER_H
