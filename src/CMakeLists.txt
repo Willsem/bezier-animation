@@ -24,6 +24,7 @@ set(HEADERS
     include/Model/Drawer/OpenGLDrawer.h
     include/Model/Managers/Manager.h
     include/Model/Managers/DrawManager.h
+    include/Model/Managers/movemanager.h
     include/Commands/Command.h
     include/Commands/Draw.h
 )
