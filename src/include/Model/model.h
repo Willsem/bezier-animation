@@ -12,6 +12,9 @@ public:
 
     QList<QVector2D> BezierList();
     QVector2D NewCoordinat(float t);
+    void setP1(float x, float y);
+    void setP2(float x, float y);
+    void setP3(float x, float y);
 
 private:
     QVector2D p1;

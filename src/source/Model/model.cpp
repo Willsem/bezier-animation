@@ -27,3 +27,21 @@ QVector2D CurveBezier::NewCoordinat(float t)
 
     return QVector2D(x, y);
 }
+
+void CurveBezier::setP1(float x, float y)
+{
+    p1.setX(x);
+    p1.setY(y);
+}
+
+void CurveBezier::setP2(float x, float y)
+{
+    p2.setX(x);
+    p2.setY(y);
+}
+
+void CurveBezier::setP3(float x, float y)
+{
+    p3.setX(x);
+    p3.setY(y);
+}
