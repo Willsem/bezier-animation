@@ -27,6 +27,7 @@ set(HEADERS
     include/Model/Managers/movemanager.h
     include/Commands/Command.h
     include/Commands/Draw.h
+    include/Model/brownstages.h
 )
 
 set(SOURCES
@@ -37,6 +38,7 @@ set(SOURCES
     source/Model/Drawer/OpenGLDrawer.cc
     source/Model/Managers/DrawManager.cc
     source/Commands/Draw.cc
+    source/Model/Managers/movemanager.cpp
 )
 
 find_package(Qt5 COMPONENTS Widgets REQUIRED)
