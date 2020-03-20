@@ -7,9 +7,9 @@ CurveBezier::CurveBezier(QVector2D p1, QVector2D p2, QVector2D p3)
     p3 = this->p3;
 }
 
-QList<QVector2D> CurveBezier::BezierList()
+QVector<QVector2D> CurveBezier::BezierList()
 {
-    QList<QVector2D> vec;
+    QVector<QVector2D> vec;
     float t = 0;
     while (t < 1)
     {

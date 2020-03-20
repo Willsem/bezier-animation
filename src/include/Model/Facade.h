@@ -12,6 +12,8 @@ public:
 
     DrawManager getDrawManager() { return drawManager; }
     MoveManager getMoveManager() { return moveManager; }
+    CurveBezier LeftBrow;
+    CurveBezier RightBrow;
 
 private:
     DrawManager drawManager;
