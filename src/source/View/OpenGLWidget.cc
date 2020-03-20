@@ -13,7 +13,7 @@ void OpenGLWidget::initializeGL()
     glClearColor(0.2f, 0.2f, 0.2f, 1.0f);
 }
 
-void OpenGLWidget::resizeGL(int newWidth, int newHeight)
+void OpenGLWidget::resizeGL(int width, int height)
 {
 }
 
