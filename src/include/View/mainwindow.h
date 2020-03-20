@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QVector2D>
+#include "Commands/Command.h"
 
 namespace Ui
 {
@@ -19,6 +20,7 @@ public:
 
 private:
     Ui::MainWindow* ui;
+    Facade *_facade;
 };
 
 #endif // __MAINWINDOW_H

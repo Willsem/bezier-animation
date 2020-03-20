@@ -7,7 +7,7 @@ class Drawer
 {
 public:
     Drawer() { }
-    virtual void drawLine(QVector2D a, QVector2D b) = 0;
+    virtual void drawLine(const QVector2D &a, const QVector2D &b) = 0;
 };
 
 #endif // __DRAWER_H
