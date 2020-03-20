@@ -1,5 +1,4 @@
 #include "View/OpenGLWidget.h"
-#include "Model/Drawer/OpenGLDrawer.h"
 
 OpenGLWidget::OpenGLWidget(QWidget *parent)
     : QOpenGLWidget(parent) { }
@@ -26,8 +25,6 @@ void OpenGLWidget::paintGL()
     glLineWidth(3.0f);
 
     Draw(*this).execute(*_facade);
-    OpenGLDrawer d(*this);
-    d.drawLine(QVector2D(0.0, 0.0), QVector2D(0.5, 0.5));
 }
 
 void OpenGLWidget::drawLine(const QVector2D &a, const QVector2D &b)
