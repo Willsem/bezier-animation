@@ -1,7 +1,7 @@
 #include "Commands/Draw.h"
 
-Draw::Draw(QOpenGLFunctions &functions)
-    : _functions(functions) { }
+Draw::Draw(OpenGLWidget &widget)
+    : _widget(widget) { }
 
 void Draw::execute(Facade &facade)
 {

@@ -7,6 +7,8 @@
 #include <QOpenGLWidget>
 #include "Commands/Draw.h"
 
+class Facade;
+
 class OpenGLWidget : public QOpenGLWidget
 {
     Q_OBJECT
@@ -18,6 +20,11 @@ protected:
 
 public:
     OpenGLWidget(QWidget *parent = nullptr);
+    void setFacade(Facade *facade);
+    void drawLine(const QVector2D &a, const QVector2D &b);
+
+private:
+    Facade *_facade;
 };
 
 #endif // __OPENGLWIDGET_H

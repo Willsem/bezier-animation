@@ -10,7 +10,7 @@ class DrawManager : public Manager
 {
 public:
     DrawManager();
-    void drawBezier(QVector<QVector2D> &points, Drawer &drawer);
+    void drawBezier(const QVector<QVector2D> &points, Drawer &drawer);
 };
 
 #endif // __DRAWMANAGER_H

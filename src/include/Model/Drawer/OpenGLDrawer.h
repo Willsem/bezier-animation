@@ -1,17 +1,19 @@
 #ifndef __OPENGLDRAWER_H
 #define __OPENGLDRAWER_H
 
-#include <QOpenGLFunctions>
+#include "View/OpenGLWidget.h"
 #include "Drawer.h"
+
+class OpenGLWidget;
 
 class OpenGLDrawer : public Drawer
 {
 public:
-    OpenGLDrawer(QOpenGLFunctions &functions);
-    void drawLine(QVector2D a, QVector2D b) override;
+    OpenGLDrawer(OpenGLWidget &widget);
+    void drawLine(const QVector2D &a, const QVector2D &b) override;
 
 private:
-    QOpenGLFunctions &_functions;
+    OpenGLWidget &_widget;
 };
 
 #endif // __OPENGLDRAWER_H

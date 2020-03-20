@@ -1,8 +1,9 @@
 #include "Model/Drawer/OpenGLDrawer.h"
 
-OpenGLDrawer::OpenGLDrawer(QOpenGLFunctions &functions)
-    : Drawer(), _functions(functions) { }
+OpenGLDrawer::OpenGLDrawer(OpenGLWidget &widget)
+    : Drawer(), _widget(widget) { }
 
-void OpenGLDrawer::drawLine(QVector2D a, QVector2D b)
+void OpenGLDrawer::drawLine(const QVector2D &a, const QVector2D &b)
 {
+    _widget.drawLine(a, b);
 }
