@@ -1,4 +1,4 @@
-#include "Model/Managers/movemanager.h"
+#include "Model/Managers/MoveManager.h"
 
 MoveManager::MoveManager() { }
 

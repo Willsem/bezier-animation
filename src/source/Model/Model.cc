@@ -1,4 +1,4 @@
-#include "Model/model.h"
+#include "Model/Model.h"
 
 CurveBezier::CurveBezier(QVector2D p1, QVector2D p2, QVector2D p3)
 {
