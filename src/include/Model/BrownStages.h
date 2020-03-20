@@ -1,6 +1,9 @@
 #ifndef BROWNSTAGES_H
 #define BROWNSTAGES_H
 
+#include <QVector2D>
+#include <QVector>
+
 enum BrownStages
 {
     NORMALLEFT = 0,
