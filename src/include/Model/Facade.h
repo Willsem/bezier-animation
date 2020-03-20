@@ -3,11 +3,12 @@
 
 #include "Model/Managers/DrawManager.h"
 #include "Model/Managers/MoveManager.h"
+#include <QVector2D>
 
 class Facade
 {
 public:
-    Facade() { }
+    Facade();
     ~Facade() { }
 
     DrawManager getDrawManager() { return drawManager; }
