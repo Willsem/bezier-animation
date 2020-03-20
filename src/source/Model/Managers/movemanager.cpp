@@ -1,5 +1,7 @@
 #include "Model/Managers/movemanager.h"
 
+MoveManager::MoveManager() { }
+
 void MoveManager::MoveBrown(BrownStages stage, CurveBezier &brown)
 {
     switch (stage)

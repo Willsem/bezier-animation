@@ -6,8 +6,9 @@
 
 class Facade
 {
-    Facade();
-    ~Facade();
+public:
+    Facade() { }
+    ~Facade() { }
 
     DrawManager getDrawManager() { return drawManager; }
     MoveManager getMoveManager() { return moveManager; }
