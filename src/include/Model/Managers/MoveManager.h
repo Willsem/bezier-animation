@@ -2,8 +2,8 @@
 #define MOVEMANAGER_H
 
 #include "Manager.h"
-#include "Model/brownstages.h"
-#include "Model/model.h"
+#include "Model/BrownStages.h"
+#include "Model/Model.h"
 
 class MoveManager : public Manager
 {
