@@ -11,8 +11,8 @@ public:
     Facade();
     ~Facade() { }
 
-    DrawManager getDrawManager() { return drawManager; }
-    MoveManager getMoveManager() { return moveManager; }
+    DrawManager &getDrawManager() { return drawManager; }
+    MoveManager &getMoveManager() { return moveManager; }
     CurveBezier LeftBrow;
     CurveBezier RightBrow;
 
