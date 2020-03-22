@@ -3,15 +3,16 @@
 
 #include "Model/Managers/DrawManager.h"
 #include "Model/Managers/MoveManager.h"
+#include <QVector2D>
 
 class Facade
 {
 public:
-    Facade() { }
+    Facade();
     ~Facade() { }
 
-    DrawManager getDrawManager() { return drawManager; }
-    MoveManager getMoveManager() { return moveManager; }
+    DrawManager &getDrawManager() { return drawManager; }
+    MoveManager &getMoveManager() { return moveManager; }
     CurveBezier LeftBrow;
     CurveBezier RightBrow;
 

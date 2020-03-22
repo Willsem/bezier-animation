@@ -2,9 +2,9 @@
 
 CurveBezier::CurveBezier(QVector2D p1, QVector2D p2, QVector2D p3)
 {
-    p1 = this->p1;
-    p2 = this->p2;
-    p3 = this->p3;
+    this->p1 = p1;
+    this->p2 = p2;
+    this->p3 = p3;
 }
 
 QVector<QVector2D> CurveBezier::BezierList()

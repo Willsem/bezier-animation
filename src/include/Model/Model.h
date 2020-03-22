@@ -8,7 +8,6 @@
 class CurveBezier
 {
 public:
-    CurveBezier() {}
     CurveBezier(QVector2D p1, QVector2D p2, QVector2D p3);
 
     QVector<QVector2D> BezierList();

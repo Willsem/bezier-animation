@@ -3,7 +3,8 @@
 
 #include <QMainWindow>
 #include <QVector2D>
-#include "Commands/Command.h"
+#include <QTimer>
+#include "Commands/Move.h"
 
 namespace Ui
 {
@@ -18,9 +19,19 @@ public:
     explicit MainWindow(QWidget* parent = nullptr);
     ~MainWindow() override;
 
+private slots:
+    void clickStartAnimation();
+    void moveIteration();
+
 private:
     Ui::MainWindow* ui;
     Facade *_facade;
+
+    BrownStages _leftPrev = BrownStages::NORMALLEFT;
+    BrownStages _rightPrev = BrownStages::NORMALRIGHT;
+
+    QTimer *timer;
+    Move move;
 };
 
 #endif // __MAINWINDOW_H

@@ -25,10 +25,11 @@ set(HEADERS
     include/Model/Managers/Manager.h
     include/Model/Managers/DrawManager.h
     include/Model/Managers/MoveManager.h
-    include/Commands/Command.h
-    include/Commands/Draw.h
     include/Model/BrownStages.h
     include/Model/Model.h
+    include/Commands/Command.h
+    include/Commands/Draw.h
+    include/Commands/Move.h
 )
 
 set(SOURCES
@@ -38,9 +39,10 @@ set(SOURCES
     source/Model/Facade.cc
     source/Model/Drawer/OpenGLDrawer.cc
     source/Model/Managers/DrawManager.cc
-    source/Commands/Draw.cc
     source/Model/Managers/MoveManager.cc
     source/Model/Model.cc
+    source/Commands/Draw.cc
+    source/Commands/Move.cc
 )
 
 find_package(Qt5 COMPONENTS Widgets REQUIRED)
