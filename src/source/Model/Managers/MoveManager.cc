@@ -51,15 +51,15 @@ void MoveManager::MoveBrown(BrownStages oldstage, BrownStages newstage, CurveBez
     QVector<QVector2D> vecnew = convertStage(newstage);
 
     float x, y;
-    x = (vecnew[0].x() - vecold[0].x()) / time * curtime;
-    y = (vecnew[0].y() - vecold[0].y()) / time * curtime;
+    x = vecold[0].x() + (vecnew[0].x() - vecold[0].x()) / time * curtime;
+    y = vecold[0].y() + (vecnew[0].y() - vecold[0].y()) / time * curtime;
     brown.setP1(x, y);
 
-    x = (vecnew[1].x() - vecold[1].x()) / time * curtime;
-    y = (vecnew[1].y() - vecold[1].y()) / time * curtime;
+    x = vecold[1].x() + (vecnew[1].x() - vecold[1].x()) / time * curtime;
+    y = vecold[1].y() + (vecnew[1].y() - vecold[1].y()) / time * curtime;
     brown.setP2(x, y);
 
-    x = (vecnew[2].x() - vecold[2].x()) / time * curtime;
-    y = (vecnew[2].y() - vecold[2].y()) / time * curtime;
+    x = vecold[2].x() + (vecnew[2].x() - vecold[2].x()) / time * curtime;
+    y = vecold[2].y() + (vecnew[2].y() - vecold[2].y()) / time * curtime;
     brown.setP3(x, y);
 }
