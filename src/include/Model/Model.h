@@ -2,6 +2,7 @@
 #define MODEL_H
 
 #include <QVector2D>
+#include <QVector3D>
 #include <QVector>
 #include <math.h>
 
@@ -10,7 +11,7 @@ class CurveBezier
 public:
     CurveBezier(QVector2D p1, QVector2D p2, QVector2D p3);
 
-    QVector<QVector2D> BezierList();
+    QVector<QVector3D> BezierList();
     QVector2D NewCoordinat(float t);
     void setP1(float x, float y);
     void setP2(float x, float y);

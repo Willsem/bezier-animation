@@ -21,7 +21,10 @@ protected:
 public:
     OpenGLWidget(QWidget *parent = nullptr);
     void setFacade(Facade *facade);
+    void setLineWidth(const float w);
     void drawLine(const QVector2D &a, const QVector2D &b);
+    void drawPolygon(const QVector2D &a, const QVector2D &b, const QVector2D &c, const QVector2D &d);
+
 
 private:
     Facade *_facade;

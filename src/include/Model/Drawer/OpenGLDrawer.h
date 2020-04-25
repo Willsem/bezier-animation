@@ -10,7 +10,7 @@ class OpenGLDrawer : public Drawer
 {
 public:
     OpenGLDrawer(OpenGLWidget &widget);
-    void drawLine(const QVector2D &a, const QVector2D &b) override;
+    void drawPolygon(const QVector3D &a, const QVector3D &b) override;
 
 private:
     OpenGLWidget &_widget;
