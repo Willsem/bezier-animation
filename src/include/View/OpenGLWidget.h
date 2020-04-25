@@ -21,6 +21,7 @@ protected:
 public:
     OpenGLWidget(QWidget *parent = nullptr);
     void setFacade(Facade *facade);
+    void setLineWidth(const float w);
     void drawLine(const QVector2D &a, const QVector2D &b);
 
 private:

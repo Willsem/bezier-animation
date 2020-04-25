@@ -27,6 +27,11 @@ void OpenGLWidget::paintGL()
     Draw(*this).execute(*_facade);
 }
 
+void OpenGLWidget::setLineWidth(const float w)
+{
+    glLineWidth(w);
+}
+
 void OpenGLWidget::drawLine(const QVector2D &a, const QVector2D &b)
 {
     glBegin(GL_LINES);

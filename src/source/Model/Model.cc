@@ -7,13 +7,13 @@ CurveBezier::CurveBezier(QVector2D p1, QVector2D p2, QVector2D p3)
     this->p3 = p3;
 }
 
-QVector<QVector2D> CurveBezier::BezierList()
+QVector<QVector3D> CurveBezier::BezierList()
 {
-    QVector<QVector2D> vec;
+    QVector<QVector3D> vec;
     float t = 0;
     while (t < 1)
     {
-        vec << NewCoordinat(t);
+        vec << QVector3D(NewCoordinat(t), t * 15);
         t += step;
     }
 
